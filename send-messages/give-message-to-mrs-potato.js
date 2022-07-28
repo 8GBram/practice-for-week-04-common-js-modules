@@ -1,4 +1,5 @@
-
+const needed = require("./say-hello-to");
+const sayHelloTo = needed.sayHelloTo;
 
 function giveMessageToMrsPotato(message) {
   sayHelloTo("Mrs. Potato");
@@ -6,3 +7,4 @@ function giveMessageToMrsPotato(message) {
 }
 
 giveMessageToMrsPotato("Hi Buzz");
+exports.giveMessageToMrsPotato = giveMessageToMrsPotato;
